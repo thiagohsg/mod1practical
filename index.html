@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical Work - Module 1</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        IGTI - Bootcamp Full Stack Developer
+      </h1>
+      <h3>Practical Work Module 1</h3>
+      <form>
+        <div class="controls">
+          <div class="labels">
+            <p>(R) Red:</p>
+            <p>(G) Green:</p>
+            <p>(B) Blue:</p>
+          </div>
+          <div class="ranges">
+            <p>
+              <input type="range" id="redRange" value="0" min="0" max="255" />
+            </p>
+            <p>
+              <!-- prettier-ignore -->
+              <input type="range" id="greenRange" value="0" min="0" max="255" />
+            </p>
+            <p>
+              <input type="range" id="blueRange" value="0" min="0" max="255" />
+            </p>
+          </div>
+          <div class="texts">
+            <p><input type="text" disabled id="redText" value="0" /></p>
+            <p><input type="text" disabled id="greenText" value="0" /></p>
+            <p><input type="text" disabled id="blueText" value="0" /></p>
+          </div>
+        </div>
+      </form>
+      <div class="color"></div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  line-height: 2rem;
+  margin-top: 50px;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0;
+}
+
+.color {
+  border: solid 1px;
+  height: 130px;
+  width: 130px;
+}
+
+.ranges {
+  margin: 0 2rem;
+}
