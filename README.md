@@ -19,8 +19,8 @@ A aplicação pode ser utilizada para definir uma cor segundo diferentes combina
 ## Online Application
 
 - Projects
-- - IGTI
-- - - [PWMOD1](http://www.thiagogouvea.com.br/projects/igti/pwmod1)
+- IGTI
+- [PWMOD1](http://www.thiagogouvea.com.br/projects/igti/pwmod1)
 
 ## Meta
 
