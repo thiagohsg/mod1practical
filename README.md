@@ -2,8 +2,6 @@
 
 > Aplicação para visualização de cores a partir da escala RGB construída utilizando HTML, CSS e JavaScript puro.
 
-[![6.14.4][npm-image]][npm-url]
-
 A aplicação contém três inputs do tipo “range”, cujos valores vão de 0 a 255 e representam, respectivamente, (R) Vermelho, (G) Verde e (B) Azul. A ser alterado, o valor de cada range é refletido em um inputs do tipo "text" respectivo. Esta alteração também reflete imediantamente no background de uma <div> abaixo dos campos, alterando-o para a cor correspondente a combinação dos três parâmentros (R, G e B) da Função RGB do CSS.
 
 Os valores dos ranges também podem ser alterados através das setas ← e → do teclado, refletindo nos texts e no background da <div>. Para que isto seja possível, ao acessar a aplicação o foco é direcionado imediatamente ao primeiro range, possibilitando a manipulação pelo teclado.
