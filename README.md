@@ -1,6 +1,6 @@
 # Practical Work Module 1 - IGTI Bootcamp Full Stack Developer
 
-> Aplicação para visualização de cores a partir da escala RGB construída utilizando HTML. CSS e JavaScript puro.
+> Aplicação para visualização de cores a partir da escala RGB construída utilizando HTML, CSS e JavaScript puro.
 
 [![6.14.4][npm-image]][npm-url]
 
