@@ -7,39 +7,58 @@
 
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Compiled and minified CSS
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    /> -->
   </head>
   <body>
-    <div class="container">
+    <div class="titles">
       <h1>
         IGTI - Bootcamp Full Stack Developer
       </h1>
       <h3>Practical Work Module 1</h3>
-      <form>
-        <div class="controls">
-          <div class="labels">
-            <p>(R) Red:</p>
-            <p>(G) Green:</p>
-            <p>(B) Blue:</p>
-          </div>
-          <div class="ranges">
-            <p>
-              <input type="range" id="redRange" value="0" min="0" max="255" />
-            </p>
-            <p>
-              <!-- prettier-ignore -->
-              <input type="range" id="greenRange" value="0" min="0" max="255" />
-            </p>
-            <p>
-              <input type="range" id="blueRange" value="0" min="0" max="255" />
-            </p>
-          </div>
-          <div class="texts">
-            <p><input type="text" disabled id="redText" value="0" /></p>
-            <p><input type="text" disabled id="greenText" value="0" /></p>
-            <p><input type="text" disabled id="blueText" value="0" /></p>
-          </div>
-        </div>
-      </form>
+    </div>
+    <div class="container">
+      <div class="flex-row">
+        <label for="redRange" class="label">(R) Red:</label>
+        <input
+          class="range"
+          type="range"
+          id="redRange"
+          value="0"
+          min="0"
+          max="255"
+        />
+        <input class="text" type="text" disabled id="redText" value="0" />
+      </div>
+
+      <div class="flex-row">
+        <label for="greenRange" class="label">(G) Green:</label>
+        <input
+          class="range"
+          type="range"
+          id="greenRange"
+          value="0"
+          min="0"
+          max="255"
+        />
+        <input class="text" type="text" disabled id="greenText" value="0" />
+      </div>
+
+      <div class="flex-row">
+        <label for="blueRange" class="label">(B) Blue:</label>
+        <input
+          class="range"
+          type="range"
+          id="blueRange"
+          value="0"
+          min="0"
+          max="255"
+        />
+        <input class="text" type="text" disabled id="blueText" value="0" />
+      </div>
       <div class="color"></div>
     </div>
     <script src="./js/script.js"></script>
