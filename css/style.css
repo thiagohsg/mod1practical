@@ -1,27 +1,13 @@
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: 2px;
-  line-height: 2rem;
+  line-height: 2.5rem;
   margin-top: 50px;
 }
 
-h1,
-h3 {
-  text-align: center;
-}
-
-h1 {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-p {
-  font-weight: 600;
-  font-size: 1.4rem;
+.titles,
+.container {
+  margin-bottom: 40px;
 }
 
 .container {
@@ -30,18 +16,49 @@ p {
   align-items: center;
 }
 
-.controls {
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+.flex-row {
   display: flex;
   flex-direction: row;
-  margin: 2rem 0;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.label {
+  min-width: 110px;
+}
+
+.range {
+  min-width: 200px;
+}
+
+.text {
+  background-color: transparent;
+  font-size: 1rem;
+  border: 0;
+  max-width: 50px;
+  margin-left: 20px;
 }
 
 .color {
   border: solid 1px;
-  height: 130px;
-  width: 130px;
-}
-
-.ranges {
-  margin: 0 2rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 20px;
+  height: 150px;
+  width: 150px;
+  margin-top: 40px;
 }
