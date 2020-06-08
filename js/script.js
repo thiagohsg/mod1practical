@@ -1,52 +1,47 @@
 window.addEventListener('load', start);
 
-var redRange = null;
-var greenRange = null;
-var blueRange = null;
+var r = '0';
+var g = '0';
+var b = '0';
 
 function start() {
-  redRange = document.querySelector('#redRange');
   focusOnRedRange();
-  greenRange = document.querySelector('#greenRange');
-  blueRange = document.querySelector('#blueRange');
   changeColor();
 
-  var redValue = document.querySelector('#redRange');
-  redValue.addEventListener('change', displayRed);
-
-  var greenValue = document.querySelector('#greenRange');
-  greenValue.addEventListener('change', displayGreen);
-
-  var blueValue = document.querySelector('#blueRange');
-  blueValue.addEventListener('change', displayBlue);
+  redRange.addEventListener('change', handleInputRangeChange);
+  greenRange.addEventListener('change', handleInputRangeChange);
+  blueRange.addEventListener('change', handleInputRangeChange);
 }
 
 function focusOnRedRange() {
   redRange.focus();
 }
 
-function displayRed(event, text) {
-  var redText = document.querySelector('#redText');
+function handleInputRangeChange(event, text) {
   var value = event.target.value;
-  redText.value = value;
+  var id = event.target.id;
+
+  switch (id) {
+    case 'redRange':
+      r = value;
+      break;
+    case 'greenRange':
+      g = value;
+      break;
+    case 'blueRange':
+      b = value;
+      break;
+  }
+
   changeColor();
 }
 
-function displayGreen(event) {
-  var greenText = document.querySelector('#greenText');
-  var value = event.target.value;
-  greenText.value = value;
-  changeColor();
-}
-
-function displayBlue(event) {
-  var blueText = document.querySelector('#blueText');
-  var value = event.target.value;
-  blueText.value = value;
-  changeColor();
-}
 
 function changeColor() {
   var box = document.querySelector('.color');
-  box.style.backgroundColor = `rgb(${redRange.value}, ${greenRange.value}, ${blueRange.value})`;
+  box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+
+  redText.value = r;
+  greenText.value = g;
+  blueText.value = b;
 }
