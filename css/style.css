@@ -5,8 +5,7 @@ body {
   margin-top: 50px;
 }
 
-.titles,
-.container {
+.titles {
   margin-bottom: 40px;
 }
 
@@ -48,17 +47,98 @@ h3 {
 .text {
   background-color: transparent;
   font-size: 1rem;
-  border: 0;
-  max-width: 50px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px dotted;
+  max-width: 30px;
   margin-left: 20px;
 }
 
 .color {
-  border: solid 1px;
+  border: solid 1px lightgrey;
   border-top-left-radius: 20px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 20px;
-  height: 150px;
-  width: 150px;
-  margin-top: 40px;
+  height: 120px;
+  width: 450px;
+  margin-top: 45px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 375px) {
+  .flex-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .label {
+    min-width: 0;
+  }
+
+  .text {
+    margin-top: 10px;
+    margin-left: 0;
+    max-width: 30px;
+  }
+
+  .color {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 10px;
+    height: 50px;
+    width: 350px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 667px) {
+  body {
+    margin-top: 20px;
+  }
+  .color {
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 668px) and (max-width: 768px) {
+  body {
+    zoom: 1.55;
+  }
+  .flex-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .label {
+    min-width: 0;
+  }
+
+  .text {
+    margin-top: 10px;
+    margin-left: 0;
+    max-width: 30px;
+  }
+
+  .color {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 10px;
+    height: 50px;
+    width: 350px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    zoom: 1.5;
+  }
+
+  .color {
+    height: 120px;
+  }
 }
